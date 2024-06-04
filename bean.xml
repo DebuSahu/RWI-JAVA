@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        
+        <context:annotation-config></context:annotation-config>
+
+        <bean class="com.spring.Address" name="address">
+        <property name="rno" value="101"></property>
+        <property name="city" value="indore"></property>
+        <property name="pincode" value="123456"></property>
+       </bean>
+       <bean class="com.spring.Address" name="address1">
+        <property name="rno" value="102"></property>
+        <property name="city" value="Kanpur"></property>
+        <property name="pincode" value="208004"></property>
+       </bean>
+       <bean class="com.spring.Employee2" name="emp2" >
+<property name="eid">
+			<value>501</value>
+		</property>
+		<property name="name">
+			<value>Adarsh</value>
+		</property>
+		<property name="desg">
+			<value>Software Engineer</value>
+		</property>
+		<property name="salary">
+			<value>80000</value>
+		</property>
+       </bean>        
+        
+        
+        
+
+
+
+</beans>
